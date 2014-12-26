@@ -166,7 +166,7 @@ if [ "${MTMP}x" != "x" ]
 then
   echo "${DATA}" | mutt -s "${SUBJ}" -F ${IMAGE_TEMP}/mutt.txt "${RCPT}" ${MTMP}
 else
-  echo "${DATA}" | mutt -s "${SUBJ}" -F ${IMAGE_TEMP}/mutt.txt "${$CPT}"
+  echo "${DATA}" | mutt -s "${SUBJ}" -F ${IMAGE_TEMP}/mutt.txt "${RCPT}"
 fi
 
 exit 0
